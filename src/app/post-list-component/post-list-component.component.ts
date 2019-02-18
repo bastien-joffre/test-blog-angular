@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-post-list-component',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./post-list-component.component.scss']
 })
 export class PostListComponentComponent implements OnInit {
+
+  @Input() posts: any;
 
   constructor() { }
 

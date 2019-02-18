@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-post-list-item-component',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./post-list-item-component.component.scss']
 })
 export class PostListItemComponentComponent implements OnInit {
+
+  @Input() article: any;
+
+  date = new Date();
 
   constructor() { }
 

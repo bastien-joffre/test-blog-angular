@@ -8,8 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Mon blog';
 
-  date = new Date();
-
   posts = [
     {
       title: 'Article 1',

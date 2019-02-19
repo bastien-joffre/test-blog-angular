@@ -11,7 +11,17 @@ export class PostListItemComponentComponent implements OnInit {
 
   date = new Date();
 
+  Likes = this.LoveIts;
+
   constructor() { }
+
+  onILike() {
+    this.Likes ++;
+  }
+
+  onIDontLike () {
+    this.Likes --;
+  }
 
   ngOnInit() {
   }

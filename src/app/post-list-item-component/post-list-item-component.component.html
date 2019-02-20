@@ -2,8 +2,10 @@
    <span class="date">{{ date | date: 'EEEE d of MMMM y' }}</span>
    <h2>{{ article.title }}</h2>
    <p>{{ article.content }}</p>
+   <p>{{ article.loveIts }}</p>
+   <p>{{ article.created_at }}</p>
    <button class="btn btn-success"
-           (click)="onILike()">I love it! {{ article.LoveIts }}</button>
+           (click)="onILike()">I love it!</button>
    <button class="btn btn-danger"
-           (click)="onIDontLike()">I don't love it! {{ article.LoveIts }}</button>
+           (click)="onIDontLike()">I don't love it!</button>
 </li>

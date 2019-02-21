@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class PostListItemComponentComponent implements OnInit {
 
   @Input() article: any;
+  @Input() loveIts: number;
 
   date = new Date();
 

@@ -1,11 +1,10 @@
 <li [ngClass]="{'list-group-item': true,
-                'list-group-item-success': article.loveIts > 0,
-                'list-group-item-danger': article.loveIts < 0}">
-   <span class="date">{{ date | date: 'EEEE d of MMMM y' }}</span>
-   <h2>{{ article.title }}</h2>
-   <p>{{ article.content }}</p>
-   <p>{{ article.loveIts }}</p>
-   <p>{{ article.created_at }}</p>
+                'list-group-item-success': this.post.loveIts > 0,
+                'list-group-item-danger': this.post.loveIts < 0}"
+        class="position-relative">
+   <div class="date">{{ this.post.created_at | date: 'EEEE d of MMMM y' }}</div>
+   <h2>{{ this.post.title }}</h2>
+   <p>{{ this.post.content }}</p>
    <button class="btn btn-success"
            (click)="onILike()">I love it!</button>
    <button class="btn btn-danger"

@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PostListComponentComponent implements OnInit {
 
-  @Input() posts: any;
+  @Input() posts;
 
   constructor() { }
 

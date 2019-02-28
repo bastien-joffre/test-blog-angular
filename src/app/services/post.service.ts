@@ -1,4 +1,5 @@
 export class PostService {
+    
     posts = [
         {
           title: 'Article 1',
@@ -19,4 +20,8 @@ export class PostService {
           created_at: new Date()
         }
       ]
+
+      deletePost(i: number) {
+        this.posts[i].title = 'deleted';
+      }
 }

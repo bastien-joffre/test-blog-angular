@@ -14,7 +14,8 @@ import { NewPostFormComponent } from './new-post-form/new-post-form.component';
 const appRoutes: Routes = [
   { path: 'blog', component: ContainerViewComponent },
   { path: 'new-post', component: NewPostFormComponent },
-  { path: '', component: ContainerViewComponent }
+  { path: '', component: ContainerViewComponent },
+  { path: '**', redirectTo: 'blog' }
 ];
 
 @NgModule({

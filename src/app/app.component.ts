@@ -7,16 +7,14 @@ import { PostService } from './services/post.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+  
   title = 'Mon blog';
 
-  posts: any[];
-
-  constructor(private postService: PostService) {
+  constructor() {
 
   }
 
   ngOnInit() {
-      this.posts = this.postService.posts;
   }
 
 }

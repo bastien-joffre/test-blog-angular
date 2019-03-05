@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContainerViewComponent implements OnInit {
 
+  posts: any;
+
   constructor() { }
 
   ngOnInit() {

@@ -33,4 +33,18 @@ export class PostService {
     this.posts[i].title = 'deleted';
     this.emitPostSubject();
   }
+
+  addPost (title: string, content: string) {
+    const postObject = {
+      title: '',
+      content: '',
+      loveIts: '0',
+      created_at: new Date()
+    }
+    postObject.title = title;
+    postObject.content = content;
+    
+    this.posts.push(postObject);
+    this.emitPostSubject();
+  }
 }
